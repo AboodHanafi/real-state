@@ -14,6 +14,10 @@ export const HeroImage = styled.div`
 
 export const NavBar = styled(FlexBox)`
   padding: 28px 0;
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Logo = styled.div`
@@ -27,6 +31,11 @@ export const Numbers = styled(FlexBox)`
   width: 30%;
   height: 31px;
   justify-content: end;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding: 20px 0;
+    margin-left: 40px;
+  }
 `;
 
 export const Number = styled(FlexBox)`
