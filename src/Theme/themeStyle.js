@@ -15,7 +15,7 @@ export const FlexBox = styled.div`
 
 export const InfoText = styled("p")`
   color: ${(props) => (props.color ? props.color : "#f2f2f2")};
-  width: 83%;
+  width: ${(props) => (props.width ? props.width : "83%")};
   letter-spacing: -0.392px;
   font-family: "Poppins";
   font-size: ${(props) => props.fontSize}px;
@@ -41,7 +41,7 @@ export const Typography = styled("span")`
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : 500)};
   margin: ${(props) => (props.margin ? props.margin : "0")};
   color: ${(props) => (props.color ? props.color : "#f2f2f2")};
-  width: 100%;
+  width: ${(props) => (props.width ? props.width : "100%")};
   @media screen and (max-width: 1268px) {
     font-size: ${(props) => props.fontSize - 6}px;
   }
@@ -93,4 +93,5 @@ export const Button = styled.button.attrs((props) => ({
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  border: none;
 `;
