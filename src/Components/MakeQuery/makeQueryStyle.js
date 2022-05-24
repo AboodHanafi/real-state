@@ -3,12 +3,14 @@ import Images from "../../Assests";
 
 export const ContactBox = styled.div`
   width: 30%;
-  height: auto;
+  height: 467;
   background-color: #fff;
   border-radius: 8px;
   padding: 25px 0;
+  min-width: 400px;
   @media screen and (max-width: 1268px) {
     width: 400px;
+    margin: 50px 0;
   }
 `;
 

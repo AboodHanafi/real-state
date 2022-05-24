@@ -22,26 +22,31 @@ export default Images;
 
 export const sectionData = [
   {
+    id: 1,
     icon: icon1,
     description: "42,000 AED",
     title: "Starting Price",
   },
   {
+    id: 2,
     icon: icon2,
     description: "APT & TH",
     title: "Types",
   },
   {
+    id: 3,
     icon: icon3,
     description: "Beachfront",
     title: "Properties",
   },
   {
+    id: 4,
     icon: icon4,
     description: "Beach",
     title: "Access",
   },
   {
+    id: 5,
     icon: icon5,
     description: "Studio & 1-4",
     title: "Bedrooms",

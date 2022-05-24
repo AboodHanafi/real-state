@@ -33,6 +33,7 @@ const Hero = () => {
               </Number>
             </Numbers>
           </NavBar>
+
           <HeroInner>
             <HeroDetails>
               <Typography fontSize={"48"} fontWeight={"700"}>

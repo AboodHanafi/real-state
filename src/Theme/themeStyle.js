@@ -9,6 +9,7 @@ export const InnerContainer = styled.div`
 
 export const FlexBox = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 `;
@@ -17,7 +18,6 @@ export const InfoText = styled("p")`
   color: ${(props) => (props.color ? props.color : "#f2f2f2")};
   width: ${(props) => (props.width ? props.width : "83%")};
   letter-spacing: -0.392px;
-  font-family: "Poppins";
   font-size: ${(props) => props.fontSize}px;
   margin: ${(props) => (props.margin ? props.margin : "0")};
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : 500)};
@@ -27,7 +27,6 @@ export const InfoText = styled("p")`
 `;
 
 // export const Typography = styled.span((props) => ({
-//   fontFamily: "Poppins",
 //   fontSize: props.fontSize ? props.fontSize : 18,
 //   fontWeight: props.fontWeight ? props.fontWeight : 500,
 //   margin: props.margin ? props.margin : "0",
@@ -36,7 +35,6 @@ export const InfoText = styled("p")`
 // }));
 
 export const Typography = styled("span")`
-  font-family: "Poppins";
   font-size: ${(props) => (props.fontSize ? props.fontSize : 18)}px;
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : 500)};
   margin: ${(props) => (props.margin ? props.margin : "0")};
@@ -62,7 +60,7 @@ export const InputBase = styled("input").attrs((props) => ({
   ::-webkit-input-placeholder {
     color: #868686;
     text-transform: capitalize;
-    font-family: "DM Sans";
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -71,7 +69,7 @@ export const InputBase = styled("input").attrs((props) => ({
   :-ms-input-placeholder {
     color: #868686;
     text-transform: capitalize;
-    font-family: "DM Sans";
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

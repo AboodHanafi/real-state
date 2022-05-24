@@ -10,29 +10,19 @@ const PropertiesSection = () => {
     <SectionWrapper height={"190px"}>
       {sectionData.map((item) => {
         return (
-          <CartItem>
+          <CartItem key={item.id}>
             <ItemImage background={`url(${item.icon})`} />
             <InputWrapper>
               <Typography
-                margin={"12px 0"}
-                style={{
-                  marginLeft: "24px",
-                }}
+                width={"80%"}
+                margin={"12px 0 24px 0"}
                 fontSize={"30"}
                 fontWeight={"700"}
                 color={"#000"}
               >
                 {item.description}
               </Typography>
-              <InfoText
-                margin={"12px 0"}
-                style={{
-                  marginLeft: "24px",
-                }}
-                fontSize={"26"}
-                fontWeight={"400"}
-                color={"#848894"}
-              >
+              <InfoText fontSize={"26"} fontWeight={"400"} color={"#848894"}>
                 {item.title}
               </InfoText>
             </InputWrapper>
