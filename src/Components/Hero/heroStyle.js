@@ -28,7 +28,7 @@ export const Logo = styled(FlexBox)`
   background: url(${Images.logo}) no-repeat;
   background-size: auto;
   @media (max-width: 785) {
-    width: 100%;
+    width: 50%;
   }
 `;
 
@@ -36,9 +36,11 @@ export const Numbers = styled(FlexBox)`
   width: 40%;
   height: 31px;
   justify-content: end;
-  min-width: 500px;
+  min-width: 320px;
+  max-width: 400px;
+  flex-wrap: wrap;
   @media (max-width: 785px) {
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
     justify-content: center;
   }
@@ -61,6 +63,7 @@ export const Number = styled(FlexBox)`
   }
   @media (max-width: 760px) {
     padding: 0 4px;
+    margin: 10px 0;
   }
 `;
 
@@ -72,7 +75,7 @@ export const HeroInner = styled(FlexBox)`
   @media screen and (max-width: 1268px) {
     flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 30px;
     height: auto;
   }
 `;
